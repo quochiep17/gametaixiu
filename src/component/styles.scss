@@ -9,10 +9,10 @@
 
 .tai-xiu .tai-xiu-content {
     display: grid;
-    grid-auto-rows: 355px 145px;    
+    grid-auto-rows: 355px 145px;
 }
 
-.tai-xiu .tai-xiu-content .tai-xiu-content-1{
+.tai-xiu .tai-xiu-content .tai-xiu-content-1 {
     display: flex;
     justify-content: space-around;
 }
@@ -32,11 +32,12 @@
 
 .tai-xiu .tai-xiu-content .tai-xiu-content-1 .random {
     width: 20%;
-    border: 1px solid black;
+    border: 1px solid red;
     border-radius: 200px;
     height: 65%;
     margin-top: 6%;
     background-color: red;
+    box-shadow: 5px 5px 50px yellow;
 }
 
 .tai-xiu .tai-xiu-content .tai-xiu-content-1 .random .random-show {
@@ -65,8 +66,61 @@
 }
 
 .tai-xiu .tai-xiu-content button {
-    border-radius: 10px;
-    margin: 0 300px 10px;
+    // border-radius: 10px;
+    margin: 0 500px 10px;
+    // background-color: yellow;
+    // font-size: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: #000;
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
     background-color: yellow;
-    font-size: 90px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
 }
+
+.tai-xiu .tai-xiu-content button:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+  }
+  
+  .tai-xiu .tai-xiu-content button svg {
+    transition: all .5s ease;
+    z-index: 2;
+  }
+  
+  .tai-xiu .tai-xiu-content button .play {
+    transition: all .5s ease;
+    transition-delay: 300ms;
+  }
+  
+  .tai-xiu .tai-xiu-content button:hover svg {
+    transform: scale(3) translate(70%);
+  }
+  
+  .tai-xiu .tai-xiu-content button .now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 2;
+  }
+  
+  .tai-xiu .tai-xiu-content button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+  }
+  
+  .tai-xiu .tai-xiu-content button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+  }
