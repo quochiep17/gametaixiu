@@ -2,14 +2,20 @@ import React, { useState } from "react";
 
 
 const Taixiu = () => {
-    const [count, randomCount] = useState(10)
+    const [count, randomCount] = useState("00")
 
     const handleRandom = () => {
         const max = 100;
-        var rand = Math.round(10 + (Math.random() * (max - 10)));
-        randomCount(rand);
+        var rand = Math.round((Math.random() * (max - 10)));
 
-
+        //thêm số 0 vào trước số có 1 chữ số
+        if (rand < 10) {
+            randomCount('0' + rand)
+        } else {
+            randomCount(rand);
+        }
+       
+        //thông báo chẳn lẻ khi random 
         if (rand % 2 == 0) {
             alert("số chẳn nè !!!")
             console.log("chan ne")
