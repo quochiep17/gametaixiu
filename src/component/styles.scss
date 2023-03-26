@@ -1,0 +1,72 @@
+.tai-xiu {
+    margin: 100px 200px;
+    border: 2px solid black;
+    height: 500px;
+    width: 1150px;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.tai-xiu .tai-xiu-content {
+    display: grid;
+    grid-auto-rows: 355px 145px;    
+}
+
+.tai-xiu .tai-xiu-content .tai-xiu-content-1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tai-xiu .tai-xiu-content .tai-xiu-content-1 #tai {
+    width: 40%;
+    font-size: 50px;
+    position: absolute;
+    top: 28%;
+    left: 18%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+.tai-xiu .tai-xiu-content .tai-xiu-content-1 .random {
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 200px;
+    height: 65%;
+    margin-top: 6%;
+    background-color: red;
+}
+
+.tai-xiu .tai-xiu-content .tai-xiu-content-1 .random .random-show {
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 35%;
+    left: 49%;
+}
+
+.tai-xiu .tai-xiu-content .tai-xiu-content-1 #xiu {
+    width: 40%;
+    font-size: 50px;
+    position: absolute;
+    top: 28%;
+    right: 18%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+.tai-xiu .tai-xiu-content .tai-xiu-content-1 .chan {
+    background-color: aqua;
+}
+
+.tai-xiu .tai-xiu-content button {
+    border-radius: 10px;
+    margin: 0 300px 10px;
+    background-color: yellow;
+    font-size: 90px;
+}
